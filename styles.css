@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  background: linear-gradient(
+      189.78deg,
+      #ffba6c -17.15%,
+      #f58100 56.08%,
+      #fe600f 100.99%
+    )
+    fixed;
+  position: fixed;
+}
+
+.enter {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+}
+
+.dws-submit {
+  padding: 13px 30px;
+  margin: 5px 0 20px 0;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+}
+
+.eye img {
+  height: 380px;
+  width: 380px;
+}
+
+.burger_menu img {
+  width: 100vw;
+  height: 24vh;
+  position: relative;
+}
+
+.burger_menu_btn img {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 30;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.burger_menu_active .burger_menu_btn {
+  background-color: transparent;
+}
+
+.burger_menu_active .burger_menu_btn {
+  box-shadow: 0 0 0;
+}
+
+.burger_menu_nav {
+  padding-top: 90px;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.5);
+  left: -100%;
+  overflow-y: auto;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+.burger_menu_active .burger_menu_nav {
+  left: 0;
+}
+
+.burger_menu_link {
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 41px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.burger_menu_link:hover {
+  filter: brightness(0.7);
+}
+
+.burger_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(38, 36, 36, 0.2);
+}
+
+.burger_menu_active .burger_overlay {
+  display: block;
+}
